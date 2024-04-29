@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsuarioActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="140dp" />
+            <TextView
+                android:id="@+id/saludo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Bienvenido @Usuario"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#FFFF" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/botonGenerarReporte"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="Reporte"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/botonVerReportes"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="Ver reportes"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/botonCerrarSesion"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="Cerrar Sesión"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

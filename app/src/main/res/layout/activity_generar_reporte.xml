@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerarReporteActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo2" />
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Generar Reporte"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="#FFFF" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de Inicio:"
+                android:textSize="20sp"
+                android:textColor="#FFFF" />
+            <TextView
+                android:id="@+id/editFechaInicio"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Da clic para elegir"
+                android:textColor="#BFBFBF"
+                android:background="#FFFF"
+                android:textSize="25dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de Fin:"
+                android:textSize="20sp"
+                android:textColor="#FFFF" />
+            <TextView
+                android:id="@+id/editFechaFin"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="none"
+                android:text="Da clic para elegir"
+                android:textColor="#BFBFBF"
+                android:background="#FFFF"
+                android:textSize="25dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/botonGenerar"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:text="Generar"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/graficavacia"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_above="@id/botonGuardarGrafica"
+                android:layout_marginBottom="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                android:id="@+id/botonGuardarReporte"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Guardar reporte"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent" />
+                <Button
+                android:id="@+id/botonGuardarGrafica"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Guardar imagen"
+                android:backgroundTint="#8D1515"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
